@@ -1,0 +1,13 @@
+<h1>Angular To-Do List </h1>
+
+<div ng-app="app">
+	<div ng-controller="todoCtrl">
+		<ul>
+			<li ng-repeat="task in tasks" ng-click="makeTaskComplete(task)">{{ task.text }} </li>
+		</ul>
+
+		<input ng-model="taskEntry">
+		<button ng-click="addTask(taskEntry)">Add Task</button>
+
+</div>
+
